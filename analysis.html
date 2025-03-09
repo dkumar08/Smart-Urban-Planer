@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Planner App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header style="text-align: center">
+        <h1>Analysis</h1>
+        <p>Visualize and improve city landscapes with data-driven insights.</p>
+    </header>
+
+    <div class="upload-container">
+        <input type="file" accept=".geojson" id="fileInput" />
+    </div>
+
+    <div class="map-container" id="map"></div>
+
+    <div class="suggestions-container">
+        <h2>Recommendations</h2>
+        <p id="suggestions">Upload a GeoJSON file to see insights.</p>
+        <div id="sustainability-score"></div>
+    </div>
+
+   
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
